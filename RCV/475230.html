@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)https://liderdeseguros.com/v/475213 -->
+<html lang="es">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://liderdeseguros.com/images/icon.png">
+    <title>Detalles de la Póliza</title>
+    <link rel="stylesheet" href="./Detalles de la Póliza_files/bootstrap.min.css">
+    <style>
+        body {
+            /* Definición de fondos: Se eliminó la capa de opacidad global */
+            background-image:
+                url("https://liderdeseguros.com/images/Logosinfondo.png"),
+                url("https://liderdeseguros.com/images/vectorconsulta.png");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+
+            /* Posicionamiento: Logo arriba a la derecha */
+            background-position:
+                right 5% top 5%,
+                center center;
+
+            /* Tamaño: 20% del ancho en escritorio */
+            background-size:
+                18vw auto,
+                cover;
+
+            color: #003366;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Eliminamos el body::before que causaba la opacidad general */
+
+        .container-mobile {
+            position: relative;
+            max-width: 420px;
+            width: 90%;
+            /* Aumentamos un poco la opacidad del fondo blanco del cuadro para compensar la falta de capa global */
+            background-color: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(15px);
+            border-radius: 30px;
+            padding: 35px 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            z-index: 1;
+        }
+
+        h2 {
+            color: #00447C;
+            font-weight: 800;
+            text-transform: uppercase;
+            font-size: 1.4rem;
+            margin-bottom: 25px;
+        }
+
+        .card {
+            border: none;
+            border-radius: 25px;
+            background-color: #fff;
+            margin-bottom: 20px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+        }
+
+        .card-header {
+            background-color: #F68C22;
+            color: #fff;
+            font-size: 1.1rem;
+            font-weight: 600;
+            padding: 12px;
+            border: none;
+        }
+
+        .card-body {
+            padding: 20px;
+            text-align: left;
+        }
+
+        .card-body p {
+            margin-bottom: 8px;
+            font-size: 1rem;
+            color: #00447C;
+            font-weight: 500;
+        }
+
+        .highlight {
+            color: #00447C;
+            font-weight: 800;
+            margin-right: 5px;
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 10px;
+        }
+
+        .btn-custom {
+            background-color: #F68C22;
+            color: #fff;
+            border: none;
+            padding: 12px 10px;
+            font-size: 0.85rem;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: bold;
+            flex: 1;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .btn-custom:hover {
+            background-color: #e07b1d;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(246, 140, 34, 0.4);
+        }
+
+        .footer-text {
+            margin-top: 25px;
+            color: #444;
+            /* Un poco más oscuro para que se vea bien sin la capa blanca */
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        /* Ajustes para móviles */
+        @media (max-width: 768px) {
+            body {
+                /* Logo visible arriba a la derecha */
+                background-size: 200px auto, cover;
+                background-position: right 5% top 5%, center center;
+            }
+
+            .container-mobile {
+                padding: 25px 15px;
+                margin-top: 80px;
+                /* Aseguramos espacio para el logo */
+            }
+
+            h2 {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+    <style id="dark-reader-style" type="text/css">
+        @media screen {
+            html {
+                -webkit-transition: -webkit-filter 300ms linear;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-mobile">
+        <h2>DETALLES DEL VEHÍCULO</h2>
+
+        <div class="card">
+            <div class="card-header">Información del Vehículo</div>
+            <div class="card-body">
+                <p><span class="highlight">Vence:</span> 18/02/2027</p>
+                <p><span class="highlight">Marca:</span> Ford</p>
+                <p><span class="highlight">Modelo:</span> Láser GLXI</p>
+                <p><span class="highlight">Color:</span> BEIGE</p>
+                <p><span class="highlight">Placa:</span> AC637RB</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">Información Personal</div>
+            <div class="card-body">
+                <p><span class="highlight">Nombre y Apellido:</span><br>Victor Manuel Corio Bolivar</p>
+                <p><span class="highlight">Plan:</span> PLAN LIDER AUTO</p>
+            </div>
+        </div>
+
+        <div class="button-group">
+            <a href="475230.pdf" class="btn-custom" target="_blank">
+                Descargar Póliza
+            </a>
+            <a href="Condicionado.pdf" class="btn-custom">Condicionado</a>
+        </div>
+
+        <div class="footer-text">
+            © 2026 Líder de Seguros para Vehículos<br>
+            Todos los derechos reservados
+        </div>
+    </div>
+
+
+</body>
+
+</html>
